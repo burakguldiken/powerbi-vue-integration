@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EnglishReader.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:EnglishReader.WebAPI.Controllers.UserController.InsertUser(EnglishReader.Entities.CustomEntity.Request.User.UserRegisterRequest)">
+            <summary>
+            User register operation
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
