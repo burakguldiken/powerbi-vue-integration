@@ -49,7 +49,7 @@ namespace EnglishReader.Business.Concrete
                     PasswordHash = Convert.ToBase64String(passwordHash),
                     PasswordSalt = Convert.ToBase64String(passwordSalt),
                     CreationDate = DateTime.Now,
-                    StatusId = (int)enumStatus.Active
+                    StatusId = (int)EnumStatus.Active
                 };
 
                 _userDal.Add(user);
