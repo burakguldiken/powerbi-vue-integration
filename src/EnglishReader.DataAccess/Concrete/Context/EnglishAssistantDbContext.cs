@@ -10,6 +10,7 @@ namespace EnglishReader.DataAccess.Concrete.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            // I will transfer this code to appsettingsjson file.
             optionsBuilder.UseSqlServer(connectionString: @"Server=(localdb)\mssqllocaldb;Database=Northwind;Trusted_Connection=true");
         }
 
