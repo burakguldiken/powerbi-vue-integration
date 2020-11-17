@@ -9,7 +9,7 @@ using System.Text;
 
 namespace EnglishReader.DataAccess.Concrete
 {
-    public class EfUserDal : EfRepositoryBase<User, EnglishAssistanDbContext>, IUserDal
+    public class EfUserDal : EfRepositoryBase<User, EnglishAssistantDbContext>, IUserDal
     {
        
     }

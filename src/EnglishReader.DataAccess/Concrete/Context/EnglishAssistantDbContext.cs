@@ -6,7 +6,7 @@ using System.Text;
 
 namespace EnglishReader.DataAccess.Concrete.Context
 {
-    public class EnglishAssistanDbContext : DbContext
+    public class EnglishAssistantDbContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
