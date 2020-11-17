@@ -5,8 +5,8 @@ using System.Text;
 
 namespace EnglishReader.Business.Enums
 {
-    public enum enumStatus
-    {
+    public enum EnumStatus
+    { 
         [Description("1")]
         InActive = 1,
         [Description("2")]
