@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using EnglishReader.Core.Entities;
 
 namespace EnglishReader.Entities.Entity
 {
-    public class User : Base
+    public class User : BaseEntity
     {
         public string Name { get; set; }
         public string Surname { get; set; }

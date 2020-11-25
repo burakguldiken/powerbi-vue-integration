@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace EnglishReader.Entities.Entity
+namespace EnglishReader.Core.Entities
 {
-    public class Base
+    public class BaseEntity
     {
         public long Id { get; set; }
         public DateTime CreationDate { get; set; }
+        public DateTime ModifiedDate { get; set; }
         public int StatusId { get; set; }
     }
 }
