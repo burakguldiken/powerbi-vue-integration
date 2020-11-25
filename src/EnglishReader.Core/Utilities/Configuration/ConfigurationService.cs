@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Text;
 using Microsoft.Extensions.Configuration;
 
@@ -46,8 +47,10 @@ namespace EnglishReader.Core.Utilities.Configuration
 
             _environmentVariableKey = _environmentVariableValue.ToLower();
 
+
             _configuration = new ConfigurationBuilder()
-                .AddJsonFile($"appsettings.{_environmentVariableValue}.json")
+                .SetBasePath(AppContext.BaseDirectory)
+                .AddJsonFile($"appsettings.{_environmentVariableValue}.json",true,false)
                 .Build();
         }
     }
