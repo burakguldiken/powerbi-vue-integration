@@ -1,11 +1,11 @@
-﻿using EnglishReader.Entities.Entity;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using BaseEntity = EnglishReader.Core.Entities.BaseEntity;
 
-namespace EnglishReader.Core
+namespace EnglishReader.Core.Context.EntityFramework
 {
-    public interface IRepository<T> where T : Base
+    public interface IRepository<T> where T : BaseEntity
     {
         T Get(Expression<Func<T, bool>> filter);
         T GetById(int id);

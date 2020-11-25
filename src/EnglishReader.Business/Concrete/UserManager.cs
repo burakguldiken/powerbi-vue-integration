@@ -15,7 +15,7 @@ using System.Text;
 
 namespace EnglishReader.Business.Concrete
 {
-    public class UserManager : IUserService
+    public class UserManager : IUserManager
     {
         IUserDal _userDal;
 
@@ -34,7 +34,7 @@ namespace EnglishReader.Business.Concrete
 
                 if(userExits != null)
                 {
-                    return new ErrorResult(Messages.userAlreadyExists);
+                    return new ErrorResult(Messages.UserAlreadyExists);
                 }
 
                 byte[] passwordHash, passwordSalt;
@@ -54,7 +54,7 @@ namespace EnglishReader.Business.Concrete
 
                 _userDal.Add(user);
 
-                return new SuccessResult(Messages.userRegistered);
+                return new SuccessResult(Messages.UserRegistered);
             }
             catch (Exception ex)
             {

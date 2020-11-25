@@ -1,15 +1,15 @@
-﻿using EnglishReader.Entities.Entity;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
+using BaseEntity = EnglishReader.Core.Entities.BaseEntity;
 
 namespace EnglishReader.Core.Context.EntityFramework
 {
     public class EfRepositoryBase<TEntity, TContext> : IRepository<TEntity>
-        where TEntity : Base
+        where TEntity : BaseEntity
         where TContext : DbContext, new()
     {
         public void Add(TEntity entity)

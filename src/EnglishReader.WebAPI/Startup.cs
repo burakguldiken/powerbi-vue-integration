@@ -6,6 +6,8 @@ using Autofac;
 using EnglishReader.Business.Abstract;
 using EnglishReader.Business.Concrete;
 using EnglishReader.Business.DependencyResolvers.Autofac;
+using EnglishReader.Business.Extensions;
+using EnglishReader.Core.Extensions;
 using EnglishReader.DataAccess.Abstract;
 using EnglishReader.DataAccess.Concrete;
 using Microsoft.AspNetCore.Builder;
@@ -88,14 +90,27 @@ namespace EnglishReader.WebAPI
                 c.IncludeXmlComments(System.IO.Path.Combine(AppContext.BaseDirectory, xmlFile));
             });
             #endregion
+
+            services.AddCoreDependencies();
+
+            services.AddBusinessDependencies();
         }
 
+        /// <summary>
+        /// Autofac module registration
+        /// </summary>
+        /// <param name="builder"></param>
         public void ConfigureContainer(ContainerBuilder builder)
         {
             builder.RegisterModule(new AutofacBusinessModule());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        /// <summary>
+        /// Middleware configurations
+        /// </summary>
+        /// <param name="app"></param>
+        /// <param name="env"></param>
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())

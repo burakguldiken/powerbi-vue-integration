@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EnglishReader.Core.Utilities.Interceptors
 {
-    public abstract class MethodInterception : MethodInterceptionBaseAttiribute
+    public abstract class MethodInterception : MethodInterceptionBaseAttribute
     {
         protected virtual void OnBefore(IInvocation invocation) { }
 
@@ -18,7 +18,9 @@ namespace EnglishReader.Core.Utilities.Interceptors
         public override void Intercept(IInvocation invocation)
         {
             var isSuccess = true;
+
             OnBefore(invocation);
+
             try
             {
                 invocation.Proceed();
@@ -26,7 +28,9 @@ namespace EnglishReader.Core.Utilities.Interceptors
             catch (Exception ex)
             {
                 isSuccess = false;
+
                 OnException(invocation);
+
                 throw;
             }
             finally
@@ -36,6 +40,7 @@ namespace EnglishReader.Core.Utilities.Interceptors
                     OnSuccess(invocation);
                 }
             }
+
             OnAfter(invocation);
         }
     }

@@ -10,15 +10,22 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EnglishReader.WebAPI.Controllers
 {
+    /// <summary>
+    /// User Controller
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
     {
-        IUserService _userService;
+        private readonly IUserManager _userService;
 
-        public UserController(IUserService _userService)
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="userService"></param>
+        public UserController(IUserManager userService)
         {
-            this._userService = _userService;
+            _userService = userService;
         }
 
         /// <summary>
@@ -31,7 +38,7 @@ namespace EnglishReader.WebAPI.Controllers
         {
             var response = _userService.Register(request);
 
-            if(!response.Success)
+            if (!response.Success)
             {
                 return BadRequest(response.Message);
             }

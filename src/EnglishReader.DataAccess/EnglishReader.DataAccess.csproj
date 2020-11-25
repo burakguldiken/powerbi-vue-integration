@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EnglishReader.Core\EnglishReader.Core.csproj" />
+    <ProjectReference Include="..\EnglishReader.Entities\EnglishReader.Entities.csproj" />
   </ItemGroup>
 
 </Project>

@@ -11,11 +11,11 @@ namespace EnglishReader.Core.Utilities.Interceptors
     {
         public IInterceptor[] SelectInterceptors(Type type, MethodInfo method, IInterceptor[] interceptors)
         {
-            var classAttiributes = type.GetCustomAttributes<MethodInterceptionBaseAttiribute>(true).ToList();
-            var methodAttiributes = type.GetMethod(method.Name).GetCustomAttributes<MethodInterceptionBaseAttiribute>(true);
-            classAttiributes.AddRange(methodAttiributes);
+            var classAttributes = type.GetCustomAttributes<MethodInterceptionBaseAttribute>(true).ToList();
+            var methodAttributes = type.GetMethod(method.Name).GetCustomAttributes<MethodInterceptionBaseAttribute>(true);
+            classAttributes.AddRange(methodAttributes);
 
-            return classAttiributes.OrderBy(x => x.Priority).ToArray();
+            return classAttributes.OrderBy(x => x.Priority).ToArray();
         }
     }
 }

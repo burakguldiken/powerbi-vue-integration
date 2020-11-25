@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace EnglishReader.DataAccess.Concrete.Context
+namespace EnglishReader.DataAccess.Concrete.EntityFramework.Context
 {
     public class EnglishAssistantDbContext : DbContext
     {
