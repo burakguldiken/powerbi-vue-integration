@@ -18,10 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EnglishReader.Entities\EnglishReader.Entities.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="appsettings.development.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

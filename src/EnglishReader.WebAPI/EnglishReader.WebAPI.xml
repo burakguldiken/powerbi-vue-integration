@@ -4,12 +4,36 @@
         <name>EnglishReader.WebAPI</name>
     </assembly>
     <members>
+        <member name="T:EnglishReader.WebAPI.Controllers.UserController">
+            <summary>
+            User Controller
+            </summary>
+        </member>
+        <member name="M:EnglishReader.WebAPI.Controllers.UserController.#ctor(EnglishReader.Business.Abstract.IUserManager)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="userService"></param>
+        </member>
         <member name="M:EnglishReader.WebAPI.Controllers.UserController.InsertUser(EnglishReader.Entities.CustomEntity.Request.User.UserRegisterRequest)">
             <summary>
             User register operation
             </summary>
             <param name="request"></param>
             <returns></returns>
+        </member>
+        <member name="M:EnglishReader.WebAPI.Startup.ConfigureContainer(Autofac.ContainerBuilder)">
+            <summary>
+            Autofac module registration
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="M:EnglishReader.WebAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Middleware configurations
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
         </member>
     </members>
 </doc>

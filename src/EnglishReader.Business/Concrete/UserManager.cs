@@ -15,7 +15,7 @@ using System.Text;
 
 namespace EnglishReader.Business.Concrete
 {
-    public class UserManager : IUserService
+    public class UserManager : IUserManager
     {
         IUserDal _userDal;
 

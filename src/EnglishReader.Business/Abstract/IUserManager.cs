@@ -7,7 +7,7 @@ using System.Text;
 
 namespace EnglishReader.Business.Abstract
 {
-    public interface IUserService
+    public interface IUserManager
     {
         IResult Register(UserRegisterRequest userRegister);
     }

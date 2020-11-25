@@ -6,6 +6,8 @@ using Autofac;
 using EnglishReader.Business.Abstract;
 using EnglishReader.Business.Concrete;
 using EnglishReader.Business.DependencyResolvers.Autofac;
+using EnglishReader.Business.Extensions;
+using EnglishReader.Core.Extensions;
 using EnglishReader.DataAccess.Abstract;
 using EnglishReader.DataAccess.Concrete;
 using Microsoft.AspNetCore.Builder;
@@ -88,6 +90,10 @@ namespace EnglishReader.WebAPI
                 c.IncludeXmlComments(System.IO.Path.Combine(AppContext.BaseDirectory, xmlFile));
             });
             #endregion
+
+            services.AddCoreDependencies();
+
+            services.AddBusinessDependencies();
         }
 
         /// <summary>

@@ -2,6 +2,10 @@
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
+    "iis": {
+      "applicationUrl": "http://localhost/EnglishReader.WebAPI",
+      "sslPort": 0
+    },
     "iisExpress": {
       "applicationUrl": "http://localhost:57296",
       "sslPort": 0
@@ -9,19 +13,19 @@
   },
   "profiles": {
     "Development": {
-      "commandName": "Executable",
+      "commandName": "IISExpress",
       "environmentVariables": {
         "ENGLISH_READER_ENVIRONMENT": "development"
       }
     },
     "Staging": {
-      "commandName": "Executable",
+      "commandName": "IISExpress",
       "environmentVariables": {
         "ENGLISH_READER_ENVIRONMENT": "staging"
       }
     },
     "Production": {
-      "commandName": "Executable",
+      "commandName": "IISExpress",
       "environmentVariables": {
         "ENGLISH_READER_ENVIRONMENT": "production"
       }
