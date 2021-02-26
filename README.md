@@ -1,6 +1,6 @@
 
 <img title="" src="./image/powerbilogo.png">
-<img title=" src = "/powerbi-vue-integration/Desktop/vue-powerbi-integration-master/Desktop/Yeni klasör/PowerBi/image/>
+<img title="" src = "/powerbi-vue-integration/Desktop/vue-powerbi-integration-master/Desktop/Yeni klasör/PowerBi/image/>
 <br><br>
 
 ## Vue PowerBi Entegration
