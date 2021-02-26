@@ -66,7 +66,7 @@
 - Select the Certificates & secret menu, then create it with the new client secret. (Don't forget to write down the secret key)
  
 <br>
-<img title="" src="./image/clientsecret.PNG">
+<img title="" src="Desktop/vue-powerbi-integration-master/Desktop/Yeni klasör/PowerBi/image/clientsecret.PNG">
 <br>
 
 - We will set powerbi permissions on Azure as the last step.
@@ -76,7 +76,7 @@
 - In the section that opens, delegated permission is selected and the areas you want to allow are selected.
 
 <br>
-<img title="" src="./image/permissions.PNG">
+<img title="" src="Desktop/vue-powerbi-integration-master/Desktop/Yeni klasör/PowerBi/image/permissions.PNG">
 <br>
 
 - With this process, the adjustments on the azure side are completed.
@@ -102,7 +102,7 @@
 - To test the accuracy of your data, you can run the project and enter your desired power data and see the results.
   
 <br>
-<img title="" src="./image/swagger.PNG">
+<img title="" src="Desktop/vue-powerbi-integration-master/Desktop/Yeni klasör/PowerBi/image/swagger.PNG">
 <br>
 
 <br>
