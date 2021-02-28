@@ -5,7 +5,7 @@
 ## Vue PowerBi Entegration
 <br>
 
-<img title="" src="./image/powerbiresult.PNG">
+<img title="" src="Desktop/vue-powerbi-integration-master/Desktop/Yeni klasör/PowerBi/image/powerbilogo.png">
 <br>
 
 1. [What is PowerBi ?](#what-is-power-bi-?)
